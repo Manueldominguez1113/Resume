@@ -1,8 +1,18 @@
+body{
+    background-color: white;
+    color: #000000;
+}
+.dark-mode{
+    background-color: #333333;
+    color: black;
+    filter: invert(1);
+}
+
 
 .top{
+    background-color: #848487;
     display: flex;
     flex-direction: column;
-    background-color: gray;
 }
 #title{
 position: relative;
@@ -24,6 +34,12 @@ hr{
     margin-top: 0;
 
 }
+a{
+    color: maroon;
+}
+a:hover{
+    color: white;
+}
 .topic{
     margin-top: 1em;
     font-weight: bold;
@@ -33,13 +49,11 @@ hr{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0.5em;
 }
 .left_side{
     display: flex;
     flex-direction: column;
-    padding-right: 3em;
-    border-right: 1px solid black ;
+    padding:0 3em;
 }
 .left_side > *{
     padding-top: 2em;
@@ -54,6 +68,7 @@ hr{
     padding: .5em 0;
 }
 .right_side{
+    background-color: #a4a4a4;
     display: flex;
     flex-direction: column;
 }
@@ -67,4 +82,11 @@ hr{
     padding-left: 0;
     background-color: #3d4634;
     margin-bottom: 1em;
+}
+.Accom{
+    list-style-type: none;
+    font-weight: bold;
+}
+@media handheld, screen and (min-width:300px ) and (max-width: 500px) {
+
 }
