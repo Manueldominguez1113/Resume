@@ -1,102 +1,202 @@
-body{
+#topBtn {
+    display: none;
+}
+
+body {
     background-color: white;
     color: #000000;
 }
+
 .dark-mode{
     background-color: #333333;
-    color: black;
-    filter: invert(1);
-}
-
-
-.top{
-    background-color: #848487;
-    display: flex;
-    flex-direction: column;
-}
-#title{
-position: relative;
-top:1em;
-    left:29em
-}
-#name{
-position:relative;
-top: 1em;
-    left: 5em;
-}
-#btn{
-    align-self: flex-end;
-}
-.contact{
-    padding-right: 2em;
-}
-hr{
-    margin-top: 0;
-
-}
-a{
-    color: maroon;
-}
-a:hover{
     color: white;
 }
-.topic{
-    margin-top: 1em;
-    font-weight: bold;
-    font-size: large;
-}
-.full_content{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-.left_side{
-    display: flex;
-    flex-direction: column;
-    padding:0 3em;
-}
-.left_side > *{
-    padding-top: 2em;
+
+.dark-mode .contact ul{
+    filter: invert(1);
+    color: black;
 }
 
-.right_side ul{
-    list-style-type: none;
-    white-space: nowrap;
+#topBtn{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 1.3em;
 
 }
-.right_side ul li{
-    padding: .5em 0;
-}
-.right_side{
-    background-color: #a4a4a4;
-    display: flex;
-    flex-direction: column;
-}
-.right_side > *{
-    padding-left: 1em;
-}
-.topic_line{
-    margin-top: 0;
-    width: 25%;
-    height: .5em;
-    padding-left: 0;
-    background-color: #3d4634;
-    margin-bottom: 1em;
-}
-.Accom{
-    list-style-type: none;
-    font-weight: bold;
-}
-@media screen and (min-width: 501px) {
-    #topBtn{
+
+@media handheld, screen and (min-width: 0) and (max-width: 500px) {
+
+    .top {
+        background-color: #3B94D9;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name {
         display: none;
     }
+
+    .top h2 {
+        margin: 0.125em;
+    }
+
+    #smallName2 {
+        margin: auto;
+    }
+
+    #smallName3 {
+        margin-left: auto;
+    }
+
+    #title {
+        align-self: center;
+    }
+
+    #btn {
+        height: 2.5em;
+    }
+
+    .contact ul {
+position: absolute;
+        top: 220px;
+        right:10%;
+    }
+
+    .contact li {
+list-style-type: none;
+        white-space: nowrap;
+        padding: .8em 0;
+    }
+
+    .number {
+        padding-left: 1.5em;
+    }
+
+    .contact a {
+        padding: 0.7em;
+    }
+
+    .contact a:hover {
+        color: black;
+    }
+
+.full_content{
+    display: flex;
+    flex-direction: column-reverse;
 }
-@media handheld, screen and (min-width:300px ) and (max-width: 500px) {
-#topBtn{
-    display: block;
+#description{
+    margin-top: 250px;
+}
+.right_side{
+    margin-bottom: 50px;
+}
+.content{
+    margin-bottom: 1em;
+}
 }
 
 
+@media screen and (min-width: 501px) {
 
+    .top h2 {
+        display: none;
+    }
+.dark-mode .top{
+    background-color: #1a415e;
+}
+    .top {
+        background-color: #3B94D9;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #title {
+        position: relative;
+        top: 1em;
+        left: 29em
+    }
+
+    #name {
+        position: relative;
+        top: 1em;
+        left: 5em;
+    }
+
+    #btn {
+        align-self: flex-end;
+    }
+
+    .contact {
+        padding-right: 2em;
+    }
+
+    hr {
+        margin-top: 0;
+
+    }
+
+
+    .topic {
+        margin-top: 1em;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .full_content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .left_side {
+        display: flex;
+        flex-direction: column;
+        padding: 0 3em;
+    }
+
+    .left_side > * {
+        padding-top: 2em;
+    }
+.right_side a{
+    color: #b71b00;
+}
+.right_side a:hover{
+    color: white;
+}
+    .right_side ul {
+        list-style-type: none;
+        white-space: nowrap;
+
+    }
+
+    .right_side ul li {
+        padding: .5em 0;
+    }
+.dark-mode .right_side{
+    background-color: #1a415e;
+}
+    .right_side {
+        background-color: #3B94D9;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right_side > * {
+        padding-left: 1em;
+    }
+
+    .topic_line {
+        margin-top: 0;
+        width: 25%;
+        height: .5em;
+        padding-left: 0;
+        background-color: #3d4634;
+        margin-bottom: 1em;
+    }
+
+    .Accom {
+        list-style-type: none;
+        font-weight: bold;
+    }
 }
